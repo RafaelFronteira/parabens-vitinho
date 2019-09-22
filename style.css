@@ -1,0 +1,92 @@
+html, body {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "CelticHand";
+    src: url("./public/fonts/CelticHand.ttf");
+}
+
+
+button {
+    background-color:rgb(212, 28, 212);
+    border: 0;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#deb2de;
+	font-family:Trebuchet MS;
+	font-size:28px;
+	font-weight:bold;
+	padding:12px 76px;
+	text-decoration:none;
+    text-shadow:3px 5px 5px #232423;
+    
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+button:hover {
+	background-color:rgb(238, 34, 238);
+}
+
+h1 {
+    font-size: 15vw;
+    text-align: center;
+    font-family: "CelticHand";
+    font-weight: bold;
+    z-index: 9999;
+
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blink-title {
+    color: rgb(0, 0, 0);
+    animation: blink-title-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-title-animation 2s steps(5, start) infinite;
+  }
+  @keyframes blink-title-animation {
+    to {
+        color: rgb(255, 255, 0);
+        /* visibility: hidden; */
+    }
+  }
+  @-webkit-keyframes blink-title-animation {
+    to {
+        color: rgb(255, 255, 0);
+        /* visibility: hidden; */
+    }
+}
+
+.blink-screen {
+    animation: blink-animation .1s steps(5, start) infinite;
+    -webkit-animation: blink-animation .1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      background-color: rgb(197, 50, 197);
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: rgb(197, 50, 197);
+    }
+}
+
+.banana {
+    background-image: url('./public/images/banana.gif');
+}
+
+.ballon {
+    background-image: url('./public/images/balao.gif');
+}
